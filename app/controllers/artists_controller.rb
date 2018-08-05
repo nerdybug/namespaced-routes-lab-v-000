@@ -1,4 +1,5 @@
 class ArtistsController < ApplicationController
+  before_action :set_preferences, only: [:indes, :new]
   def index
     @artists = Artist.all
   end
