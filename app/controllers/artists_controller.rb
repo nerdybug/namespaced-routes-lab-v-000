@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-  before_action :set_preferences, only: [:indes, :new]
+  before_action :set_preferences, only: [:index, :new]
 
   def index
     if @preferences && @preferences.artist_sort_order
